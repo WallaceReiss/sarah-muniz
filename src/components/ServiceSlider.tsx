@@ -38,8 +38,8 @@ export function ServiceSlider() {
         >
           <CarouselContent className="-ml-4">
             {sliderImages.map((img, index) => (
-              <CarouselItem key={index} className="pl-4 basis-full md:basis-1/2 lg:basis-2/3">
-                <div className="relative aspect-[3/4] md:aspect-[16/9] rounded-2xl overflow-hidden shadow-xl border-4 border-primary/20">
+              <CarouselItem key={index} className="pl-4 basis-full md:basis-1/2 lg:basis-1/3">
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-xl border-4 border-primary/20">
                   <Image
                     src={img.imageUrl}
                     alt={img.description}

@@ -15,26 +15,20 @@
     {
       "id": "service-slider-1",
       "description": "Service showcase 1",
-      "imageUrl": "/assets/loiro-azul.jpeg",
+      "imageUrl": "/assets/modelo-cabelo-make.png",
       "imageHint": "hair styling"
     },
     {
       "id": "service-slider-2",
       "description": "Service showcase 2",
-      "imageUrl": "/assets/loiro-vermelho.jpeg",
-      "imageHint": "nail art"
+      "imageUrl": "/assets/noiva-modelo.png",
+      "imageHint": "bridal makeup"
     },
     {
       "id": "service-slider-3",
       "description": "Service showcase 3",
-      "imageUrl": "/assets/modelo-unha1.jpeg",
-      "imageHint": "makeup professional"
-    },
-    {
-      "id": "service-slider-4",
-      "description": "Service showcase 4",
-      "imageUrl": "/assets/modelo-unha2.jpeg",
-      "imageHint": "makeup professional"
+      "imageUrl": "/assets/unha-slide1.jpeg",
+      "imageHint": "nails model"
     },
     {
       "id": "hair-1",
