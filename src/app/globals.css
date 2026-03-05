@@ -1,0 +1,110 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 337 20% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 337 20% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 337 20% 15%;
+    --primary: 345 100% 92%;
+    --primary-foreground: 337 20% 15%;
+    --secondary: 337 20% 95%;
+    --secondary-foreground: 337 63% 30%;
+    --muted: 337 20% 95%;
+    --muted-foreground: 337 10% 45%;
+    --accent: 345 60% 70%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 337 20% 90%;
+    --input: 337 20% 90%;
+    --ring: 345 100% 92%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground selection:bg-primary/20 selection:text-foreground;
+    font-variant-ligatures: common-ligatures;
+  }
+  h1, h2, h3, h4 {
+    @apply font-headline;
+  }
+}
+
+.font-headline {
+  font-family: 'Playfair Display', serif;
+}
+
+.wavy-bottom {
+  position: relative;
+  background: hsl(var(--primary));
+  overflow: hidden;
+}
+
+.wavy-bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: white;
+  border-radius: 100% 100% 0 0;
+  transform: translateY(50%);
+}
+
+.stylized-border {
+  position: relative;
+  padding: 12px;
+  background: white;
+  border: 1px solid hsl(var(--accent) / 0.3);
+  box-shadow: 20px 20px 0px hsl(var(--accent) / 0.1);
+}
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  z-index: -1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}

@@ -1,0 +1,118 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-illustration",
+      "description": "Artistic beauty illustration",
+      "imageUrl": "/assets/sarah-muniz.jpeg",
+      "imageHint": "artistic portrait woman"
+    },
+    {
+      "id": "welcome-image",
+      "description": "Beauty world welcome image",
+      "imageUrl": "/assets/modelo-make2.jpeg",
+      "imageHint": "makeup application"
+    },
+    {
+      "id": "service-slider-1",
+      "description": "Service showcase 1",
+      "imageUrl": "/assets/loiro-azul.jpeg",
+      "imageHint": "hair styling"
+    },
+    {
+      "id": "service-slider-2",
+      "description": "Service showcase 2",
+      "imageUrl": "/assets/loiro-vermelho.jpeg",
+      "imageHint": "nail art"
+    },
+    {
+      "id": "service-slider-3",
+      "description": "Service showcase 3",
+      "imageUrl": "/assets/modelo-unha1.jpeg",
+      "imageHint": "makeup professional"
+    },
+    {
+      "id": "service-slider-4",
+      "description": "Service showcase 4",
+      "imageUrl": "/assets/modelo-unha2.jpeg",
+      "imageHint": "makeup professional"
+    },
+    {
+      "id": "hair-1",
+      "description": "Hair service 1",
+      "imageUrl": "/assets/loiro-azul.jpeg",
+      "imageHint": "blonde hair"
+    },
+    {
+      "id": "hair-2",
+      "description": "Hair service 2",
+      "imageUrl": "/assets/cabelo-castanho.jpeg",
+      "imageHint": "hair treatment"
+    },
+    {
+      "id": "hair-3",
+      "description": "Hair service 3",
+      "imageUrl": "/assets/cabelo-loiro-costas.jpeg",
+      "imageHint": "hair cut"
+    },
+    {
+      "id": "makeup-1",
+      "description": "Makeup service 1",
+      "imageUrl": "/assets/modelo-make1.jpeg",
+      "imageHint": "bridal makeup"
+    },
+    {
+      "id": "makeup-2",
+      "description": "Makeup service 2",
+      "imageUrl": "/assets/modelo-make2.jpeg",
+      "imageHint": "evening makeup"
+    },
+    {
+      "id": "makeup-3",
+      "description": "Makeup service 3",
+      "imageUrl": "/assets/modelo-make3.jpeg",
+      "imageHint": "glam makeup"
+    },
+    {
+      "id": "nails-1",
+      "description": "Nail service 1",
+      "imageUrl": "/assets/modelo-unha1.jpeg",
+      "imageHint": "gel nails"
+    },
+    {
+      "id": "nails-2",
+      "description": "Nail service 2",
+      "imageUrl": "/assets/modelo-unha2.jpeg",
+      "imageHint": "french manicure"
+    },
+    {
+      "id": "nails-3",
+      "description": "Nail service 3",
+      "imageUrl": "/assets/modelo-unha4.jpeg",
+      "imageHint": "nail design"
+    },
+    {
+      "id": "team-1",
+      "description": "Sarah Muniz",
+      "imageUrl": "/assets/sarah-muniz-perfil.jpeg",
+      "imageHint": "elegant woman portrait"
+    },
+    {
+      "id": "team-2",
+      "description": "Beauty Expert 2",
+      "imageUrl": "/assets/design-unhas.jpeg",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "team-3",
+      "description": "Beauty Expert 1",
+      "imageUrl": "/assets/maquiadora.jpeg",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "parallax-bg",
+      "description": "Parallax Background Texture",
+      "imageUrl": "https://picsum.photos/seed/texture/1920/1080",
+      "imageHint": "soft background"
+    }
+  ]
+}
