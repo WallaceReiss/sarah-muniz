@@ -27,6 +27,24 @@
     {
       "id": "service-slider-3",
       "description": "Service showcase 3",
+      "imageUrl": "/assets/modelo-cabelo-slider.jpeg",
+      "imageHint": "nails model"
+    },
+    {
+      "id": "service-slider-4",
+      "description": "Service showcase 4",
+      "imageUrl": "/assets/cabelo-preto-loiro.jpeg",
+      "imageHint": "hair model"
+    },
+    {
+      "id": "service-slider-5",
+      "description": "Service showcase 5",
+      "imageUrl": "/assets/modelo-unha4.jpeg",
+      "imageHint": "nails model"
+    },
+    {
+      "id": "service-slider-6",
+      "description": "Service showcase 6",
       "imageUrl": "/assets/unha-slide1.jpeg",
       "imageHint": "nails model"
     },

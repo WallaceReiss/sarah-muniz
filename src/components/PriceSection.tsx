@@ -4,10 +4,10 @@
 import { Scissors, Sparkles, Wand2, Heart, User, Layout } from "lucide-react"
 
 const priceItems = [
-  { name: "Cabeleireiro", price: "R$120", icon: <Scissors className="h-6 w-6" /> },
-  { name: "Maquiagem", price: "R$150", icon: <User className="h-6 w-6" /> },
-  { name: "Design de Unhas", price: "R$70", icon: <Heart className="h-6 w-6" /> },
-  { name: "Manicure & Pedicure", price: "R$65", icon: <Wand2 className="h-6 w-6" /> },
+  { name: "Cabeleireiro", price: "R$120", description: "Tratamentos e químicas" ,icon: <Scissors className="h-6 w-6" /> },
+  { name: "Maquiagem", price: "R$150", description: "Arte de maquiagem profissional", icon: <User className="h-6 w-6" /> },
+  { name: "Design de Unhas", price: "R$70", description: "Design e decoração de unhas", icon: <Heart className="h-6 w-6" /> },
+  { name: "Manicure & Pedicure", price: "R$65", description: "Cuidados completos para mãos e pés", icon: <Wand2 className="h-6 w-6" /> },
 ]
 
 export function PriceSection() {
@@ -28,7 +28,7 @@ export function PriceSection() {
             </div>
             <div className="space-y-2">
               <h3 className="font-bold text-xl">{item.name}</h3>
-              <p className="text-sm text-muted-foreground">Descrição do serviço.</p>
+              <p className="text-sm text-muted-foreground">{item.description}</p>
             </div>
             <p className="text-accent font-bold text-lg">{item.price}</p>
           </div>

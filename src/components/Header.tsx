@@ -12,15 +12,23 @@ import {
 } from "@/components/ui/sheet"
 
 const navLinks = [
-  { name: "Início", href: "#home" },
-  { name: "Cabelos", href: "#hair" },
-  { name: "Maquiagem", href: "#makeup" },
-  { name: "Unhas", href: "#nails" },
-  { name: "Sobre", href: "#about" },
+  { name: "Início", href: "home" },
+  { name: "Cabelos", href: "hair" },
+  { name: "Maquiagem", href: "makeup" },
+  { name: "Unhas", href: "nails" },
+  { name: "Sobre", href: "about" },
 ]
 
 export function Header() {
   const [isOpen, setIsOpen] = React.useState(false)
+
+  const scrollToSection = (id: string, closeMobile = false) => {
+    const el = document.getElementById(id)
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+    if (closeMobile) setIsOpen(false)
+  }
 
   return (
     <header className="absolute top-0 left-0 right-0 z-50 px-6 py-8 md:px-12">
@@ -50,13 +58,13 @@ export function Header() {
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
-            <Link 
-              key={link.name} 
-              href={link.href} 
-              className="text-sm font-medium uppercase tracking-widest hover:text-accent transition-colors"
+            <button
+              key={link.name}
+              onClick={() => scrollToSection(link.href)}
+              className="text-sm font-medium uppercase tracking-widest hover:text-accent transition-colors cursor-pointer"
             >
               {link.name}
-            </Link>
+            </button>
           ))}
         </nav>
 
@@ -71,14 +79,13 @@ export function Header() {
             <SheetContent side="right" className="w-[300px] flex flex-col pt-20">
               <nav className="flex flex-col space-y-6">
                 {navLinks.map((link) => (
-                  <Link 
-                    key={link.name} 
-                    href={link.href} 
-                    onClick={() => setIsOpen(false)}
-                    className="text-2xl font-headline italic hover:text-accent transition-colors"
+                  <button
+                    key={link.name}
+                    onClick={() => scrollToSection(link.href, true)}
+                    className="text-2xl font-headline italic hover:text-accent transition-colors text-left cursor-pointer"
                   >
                     {link.name}
-                  </Link>
+                  </button>
                 ))}
               </nav>
             </SheetContent>

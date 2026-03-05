@@ -1,6 +1,13 @@
 
+"use client"
+
 import Link from "next/link"
 import { Instagram, Facebook, Twitter } from "lucide-react"
+
+const scrollTo = (id: string) => {
+  const el = document.getElementById(id)
+  if (el) el.scrollIntoView({ behavior: "smooth", block: "start" })
+}
 
 export function Footer() {
   return (
@@ -19,10 +26,10 @@ export function Footer() {
         <div className="space-y-6">
           <h3 className="text-lg font-bold">Link rápido</h3>
           <nav className="flex flex-col space-y-3 text-background/60">
-            <Link href="#home" className="hover:text-primary transition-colors">Início</Link>
-            <Link href="#hair" className="hover:text-primary transition-colors">Serviços de Cabelo</Link>
-            <Link href="#makeup" className="hover:text-primary transition-colors">Arte de Maquiagem</Link>
-            <Link href="#nails" className="hover:text-primary transition-colors">Cuidados com as Unhas</Link>
+            <button onClick={() => scrollTo("home")} className="hover:text-primary transition-colors text-left cursor-pointer">Início</button>
+            <button onClick={() => scrollTo("hair")} className="hover:text-primary transition-colors text-left cursor-pointer">Serviços de Cabelo</button>
+            <button onClick={() => scrollTo("makeup")} className="hover:text-primary transition-colors text-left cursor-pointer">Arte de Maquiagem</button>
+            <button onClick={() => scrollTo("nails")} className="hover:text-primary transition-colors text-left cursor-pointer">Cuidados com as Unhas</button>
           </nav>
         </div>
 
